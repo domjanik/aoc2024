@@ -43,7 +43,7 @@ public class Day2 {
         safeLines++;
       }
     }
-    System.out.printf("Safe lines on map: %d\n", safeLines);
+    System.out.printf("[Part 1] Safe lines on map: %d\n", safeLines);
   }
 
   private void part2() {
@@ -63,11 +63,10 @@ public class Day2 {
         }
       }
       if (safety) {
-        System.out.println(integers);
         safeLines++;
       }
     }
-    System.out.printf("Safe lines on map: %d\n", safeLines);
+    System.out.printf("[Part 2] Safe lines on map: %d\n", safeLines);
   }
 
   private List<List<Integer>> prepareInputArray() {
