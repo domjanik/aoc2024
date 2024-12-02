@@ -10,7 +10,7 @@ public class Day2 {
 
   public Day2() {
     ReadFile readFile = new ReadFile();
-    String input = readFile.main("/Users/dominikjanik/projects/priv/aoc2024/Java/day2/input.txt");
+    String input = readFile.main("day2/input.txt");
     fileInput = prepareInputArray(input);
   }
 

@@ -8,7 +8,7 @@ public class ReadFile {
   public String main(String fileName) {
     StringBuilder data = new StringBuilder();
     try {
-      File myObj = new File(fileName);
+      File myObj = new File("/Users/dominikjanik/projects/priv/aoc2024/Java/" + fileName);
       Scanner myReader = new Scanner(myObj);
       while (myReader.hasNextLine()) {
         data.append(myReader.nextLine()).append("\n");
