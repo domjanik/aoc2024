@@ -6,11 +6,12 @@ import java.util.*;
 
 public class Day2 {
 
-  private final String input;
+  private final List<List<Integer>> fileInput;
 
   public Day2() {
     ReadFile readFile = new ReadFile();
-    input = readFile.main("/Users/dominikjanik/projects/priv/aoc2024/Java/day2/input.txt");
+    String input = readFile.main("/Users/dominikjanik/projects/priv/aoc2024/Java/day2/input.txt");
+    fileInput = prepareInputArray(input);
   }
 
   private boolean CheckLineSafety(List<Integer> lineInput) {
@@ -34,7 +35,6 @@ public class Day2 {
   }
 
   private void part1() {
-    List<List<Integer>> fileInput = prepareInputArray();
     Integer safeLines = 0;
 
     for (List<Integer> integers : fileInput) {
@@ -47,7 +47,6 @@ public class Day2 {
   }
 
   private void part2() {
-    List<List<Integer>> fileInput = prepareInputArray();
     Integer safeLines = 0;
 
     for (List<Integer> integers : fileInput) {
@@ -69,7 +68,7 @@ public class Day2 {
     System.out.printf("[Part 2] Safe lines on map: %d\n", safeLines);
   }
 
-  private List<List<Integer>> prepareInputArray() {
+  private List<List<Integer>> prepareInputArray(String input) {
     return Arrays.stream(input.split("\n"))
         .toList()
         .stream()
@@ -78,6 +77,7 @@ public class Day2 {
   }
 
   public void run() {
+    System.out.println("------ Day 2 ------");
     part1();
     part2();
   }
