@@ -34,9 +34,7 @@ function day02() {
 
         if (isSafe(report)) safe++;
         if (isSafe(report) || tolerable) {
-            if(tolerable) {
-                console.log(report);
-            }
+            console.log(report);
             madeSafe++;
         }
     }
