@@ -24,8 +24,7 @@ public class Day3 {
 
     while (matcher.find()) {
       List<Integer> numbers = Arrays.stream(matcher.group()
-          .replace("mul(", "")
-          .replace(")", "")
+          .replaceAll("mul\\(|\\)", "")
           .split(","))
           .map(Integer::parseInt).toList();
 
@@ -49,8 +48,7 @@ public class Day3 {
         turnedOn = false;
       else if(turnedOn) {
         List<Integer> numbers = Arrays.stream(matcher.group()
-                                                  .replace("mul(", "")
-                                                  .replace(")", "")
+                                                  .replaceAll("mul\\(|\\)", "")
                                                   .split(","))
             .map(Integer::parseInt).toList();
         result += numbers.get(0) * numbers.get(1);
