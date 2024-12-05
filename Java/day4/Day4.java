@@ -97,7 +97,7 @@ public class Day4 {
         }
       }
     }
-    System.out.printf("[Part 1] There is %d xmasses in input", xmasCount);
+    System.out.printf("[Part 1] There is %d xmasses in input\n", xmasCount);
   }
 
   private boolean findCrossedMas(int i, int j) {
@@ -125,12 +125,12 @@ public class Day4 {
         }
       }
     }
-    System.out.printf("[Part 2] There is %d xmasses in input", xmasCount);
+    System.out.printf("[Part 2] There is %d xmasses in input\n", xmasCount);
   }
 
   public void run() {
     System.out.println("------ Day 4 ------");
-//    part1();
+    part1();
     part2();
   }
 }
