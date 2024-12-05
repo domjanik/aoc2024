@@ -8,11 +8,6 @@ class Rule {
 
   HashSet<Integer> prev = new HashSet<>();
   HashSet<Integer> next = new HashSet<>();
-
-  @Override
-  public String toString() {
-    return String.format("Prev: %s, Next: %s", prev.toString(), next.toString());
-  }
 }
 
 public class Day5 {
