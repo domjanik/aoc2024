@@ -65,7 +65,6 @@ public class Day7 {
     for (Day7Input input : fileInput) {
       boolean isResultAvailable = isResultAvailable(input.result, input.numbers, List.of("+", "*"));
       if (isResultAvailable) {
-        System.out.printf("Equation %s is valid\n", input.numbers.toString());
         sumValue += input.result;
       }
     }
@@ -78,7 +77,6 @@ public class Day7 {
     for (Day7Input input : fileInput) {
       boolean isResultAvailable = isResultAvailable(input.result, input.numbers, List.of("+", "*", "||"));
       if (isResultAvailable) {
-        System.out.printf("Equation %s is valid\n", input.numbers.toString());
         sumValue += input.result;
       }
     }
