@@ -81,7 +81,7 @@ public class Day7 {
       }
     }
 
-    System.out.printf("[Part 2]: Result of valid equations is %d ", sumValue);
+    System.out.printf("[Part 2]: Result of valid equations is %d \n", sumValue);
   }
 
   public void run() {

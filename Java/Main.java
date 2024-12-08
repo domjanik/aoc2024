@@ -7,6 +7,7 @@ import Java.day4.Day4;
 import Java.day5.Day5;
 import Java.day6.Day6;
 import Java.day7.Day7;
+import Java.day8.Day8;
 
 public class Main {
   public static void main(String[] args) {
@@ -17,5 +18,6 @@ public class Main {
     new Day5().run();
     new Day6().run();
     new Day7().run();
+    new Day8().run();
   }
 }
